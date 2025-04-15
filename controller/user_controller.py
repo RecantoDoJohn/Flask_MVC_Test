@@ -17,7 +17,7 @@ class UserController:
         if flask.request.method == 'POST':
             nome =flask. request.form['nome']
 
-            newUsuario = usuario(name=nome)
+            newUsuario = usuario(nome=nome)
             db.session.add(newUsuario)
             db.session.commit()
 
